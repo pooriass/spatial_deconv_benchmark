@@ -1,0 +1,119 @@
+# Spatial Transcriptomics Datasets in Pancreatic Ductal Adenocarcinoma (PDAC)
+These are some publicly available Spatial transcriptomics datasets(PDAC) that we intended to use, including Visium arms.
+
+## Dataset overview
+
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  GEO accession   Technology            Sample count Species    Chemistry / assay              Size\*            PMID Overall design                Concise GEO-summary interpretation
+                                               (`n`)            configuration                                                                       
+  --------------- ----------------- ---------------- ---------- --------------------- --------------- --------------- ----------------------------- --------------------------------------------------------------------
+  **GSE274557**   10x Visium         **57 GSMs**; 55 *Homo      **Visium Spatial Gene      **6.3 GB**    **40269162** Spatial profiling of primary  Builds a high-resolution spatial atlas of treatment-refractory
+                  spatial            human tissues + sapiens*   Expression,                                           PDAC and matched liver, lung  metastatic PDAC to study **lineage plasticity, clonal architecture
+                  transcriptomics     PDX validation            fresh-frozen** for                                    and peritoneal metastases     and TME differences across metastatic organs**. [NCBI
+                                             samples            the main cohort;                                      from **13 rapid-autopsy       GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274557)
+                                                                **Visium CytAssist                                    patients**; GEO contains 57   
+                                                                FFPE** for PDX                                        samples. Main human cohort =  
+                                                                validation                                            55 tissues; PDX models        
+                                                                                                                      provide orthogonal            
+                                                                                                                      validation.                   
+
+  **GSE272362**   10x Visium                  **30** *Homo      **Visium v1 Spatial      **248.2 MB**    **39294496** Atlas of 30 specimens: **10   Maps matched primary/metastatic PDAC and identifies conserved
+                  spatial                            sapiens*   Gene Expression for                                   primary PDAC, 3 normal        **fibrotic, metabolic and immunosuppressive spatial ecotypes**,
+                  transcriptomics                               FFPE**, human                                         pancreas, 12 hepatic          highlighting anatomical-site-specific TME heterogeneity. [NCBI
+                                                                whole-transcriptome                                   metastases, 5 lymph-node      GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE272362)
+                                                                probe set                                             metastases**, with adjacent   
+                                                                                                                      normal tissues; **91,496      
+                                                                                                                      spatial spots** analyzed.     
+
+  **GSE235315**   10x Visium                   **7** *Homo      **Visium FFPE Spatial    **389.5 MB**    **38297291** Paired spatial                Uses spatial data to support the discovery of **Ep_VGLL1**, an
+                  spatial                            sapiens*   Gene Expression**;                                    transcriptomics from **7 of   intermediate epithelial state between classical and basal-like PDAC,
+                  transcriptomics                               exact kit/probe-set                                   17 pancreatic-cancer          and to characterize CAF organization. [NCBI
+                                                                revision not                                          patients** studied by         GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE235315)
+                                                                specified in the GEO                                  scRNA-seq; FFPE tumor regions 
+                                                                record                                                were profiled and integrated  
+                                                                                                                      with single-cell data.        
+
+  **GSE205354**   10x Visium                   **8** *Homo      **Visium Spatial Gene    **179.2 MB**    **37263303** Eight fresh-frozen PDAC       Characterizes the PDAC immune microenvironment spatially,
+                  spatial                            sapiens*   Expression,                                           tissue sections were profiled emphasizing **exhausted CD8 T cells, immunosuppressive myeloid cells
+                  transcriptomics                               fresh-frozen                                          with Visium; pathologists     and CD4 T-cell states**, with comparisons to adjacent normal
+                                                                tissue**;                                             annotated immune/tissue       tissue/stroma. [NCBI
+                                                                early/original Visium                                 regions and spatial           GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE205354)
+                                                                workflow, exact                                       expression was used to        
+                                                                chemistry revision                                    investigate immune            
+                                                                not stated                                            dysfunction.                  
+
+  **GSE254829**   10x Visium                  **14** *Homo      **Visium FFPE**,         **324.6 MB**   **39116880**† Spatial profiling of PanIN    Develops an integrated imaging/ST/scRNA-seq framework for PanIN and
+                  spatial                            sapiens*   Human Whole                                           lesions from PDAC surgical    shows **CAF/apCAF localization and a shift from inflammatory CAF
+                  transcriptomics                               Transcriptome Probe                                   specimens, including matched  signaling toward proliferative programs during PanIN progression**.
+                                                                Set **v1.0**;                                         **low-grade and high-grade    [NCBI
+                                                                companion study also                                  PanIN** samples, combined     GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE254829)
+                                                                used Xenium/IMC for                                   with scRNA-seq and            
+                                                                validation                                            imaging-based validation.     
+
+  **GSE278687**   10x Visium           **21 slices** *Homo      **Mixed Visium             **1.0 GB**    **40680743** 21 spatial sections examining Maps the spatial landscape surrounding nerves in PDAC and examines
+                  spatial                            sapiens*   configurations**:                                     PDAC with different degrees   interactions among **tumor cells, immune cells and neuronal
+                  transcriptomics                               fresh-frozen Visium,                                  of **neural invasion**;       components** associated with neural invasion. [NCBI
+                                                                Visium FFPE and                                       includes FFPE, fresh-frozen   GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE278687)
+                                                                Visium CytAssist FFPE                                 and CytAssist samples.        
+
+  **GSE310352**   **NanoString          **8 slides** *Homo      **CosMx TAP 1K             **5.9 GB**    **41533516** CosMx profiling of            Provides cell-resolved spatial profiling of PDAC and links the
+                  CosMx SMI**                        sapiens*   Universal RNA Panel**                                 treatment-naïve primary PDAC  **classical-to-basal tumor continuum** to distinct stromal
+                                                                on FFPE tissue                                        resections; this subseries is neighborhoods, ECM, hypoxia and therapy-resistance-associated
+                                                                                                                      part of a **39-patient**      microenvironments. [NCBI
+                                                                                                                      multimodal study combining    GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310352)
+                                                                                                                      spatial transcriptomics,      
+                                                                                                                      CosMx and other data types.   
+
+  **GSE277782**   **NanoString         **7 samples** *Homo      **CosMx 1,000-plex    **≈1.09 GB** of    **40269162** CosMx validation/extension of Provides single-cell spatial validation of the metastasis study,
+                  CosMx SMI**        from 3 patients sapiens*   gene panel**,              the listed                 the GSE274557 study: **7      resolving **tumor-bed, juxtalesional and distant regions** to
+                                                                fresh-frozen tissue     supplementary                 tissue samples from 3         validate lineage composition and spatial organization. [NCBI
+                                                                                      files; GEO does                 patients**, with **90 FOVs**  GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE277782)
+                                                                                      not provide one                 across primary and metastatic 
+                                                                                         consolidated                 lesions.                      
+                                                                                          RAW.tar for                                               
+                                                                                       this subseries                                               
+
+  **GSE274673**   **10x Xenium**               **6** *Homo      **Custom 480-gene         **47.9 GB**   **41005303**‡ Xenium on **3                 Examines **antigen-presenting CAF niches** at single-cell spatial
+                                                     sapiens*   Xenium panel**, FFPE;                                 treatment-naïve + 3           resolution and reports treatment-associated remodeling of
+                                                                5-µm sections                                         chemoradiotherapy-treated**   desmoplasia/CAF composition and an SPP1-high cancer-cell state.
+                                                                                                                      human PDAC samples; custom    [NCBI
+                                                                                                                      panel designed for            GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274673)
+                                                                                                                      CAF/cell-state and functional 
+                                                                                                                      characterization.             
+
+  **GSE282302**   10x Visium               **108 GEO *Homo      **Visium for FFPE,         **4.9 GB**    **41533516** Spatial transcriptomics of    Defines a spatial PDAC atlas spanning **\~340K low-bulk spatial
+                  spatial             samples/ROIs** sapiens*   Human Probeset v2**                                   **primary untreated PDAC      transcriptomes**, identifying the classical-to-basal tumor spectrum
+                  transcriptomics          from **39                                                                  tumors after FOLFIRINOX       and linking tumor identity to collagen, hypoxia, fibroblast and
+                                          patients**                                                                  neoadjuvant treatment**,      interferon-associated microenvironments. [NCBI
+                                                                                                                      using FFPE tissue and Visium  GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE282302)
+                                                                                                                      human probeset v2. The 108    
+                                                                                                                      GSMs represent ROIs/sections  
+                                                                                                                      rather than 108 patients.     
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Notes
+
+-   **GEO accession** links point to the corresponding NCBI Gene
+    Expression Omnibus accession page.
+-   **GSMs** are GEO Sample records. A GSM count should not
+    automatically be interpreted as a patient count; entries may
+    represent tissue sections, regions of interest, slides, or
+    validation samples.
+-   **FOV** means field of view; **ROI** means region of interest;
+    **PDAC** means pancreatic ductal adenocarcinoma; **PanIN** means
+    pancreatic intraepithelial neoplasia; **CAF** means
+    cancer-associated fibroblast; **apCAF** means antigen-presenting
+    cancer-associated fibroblast; **TME** means tumor microenvironment;
+    **FFPE** means formalin-fixed, paraffin-embedded; **PDX** means
+    patient-derived xenograft; **scRNA-seq** means single-cell RNA
+    sequencing; **IMC** means imaging mass cytometry; **ECM** means
+    extracellular matrix.
+-   **Size\*** reflects the supplied dataset-size estimates and may
+    refer to supplementary files rather than a single consolidated
+    archive.
+-   **†, ‡** The dagger markers are retained from the supplied table;
+    their definitions were not provided.
+-   Dataset interpretations and metadata above are transcribed and
+    organized from the supplied information. Verify accession details
+    and publication mappings against GEO and the associated papers
+    before using this catalog as a formal citation source.
