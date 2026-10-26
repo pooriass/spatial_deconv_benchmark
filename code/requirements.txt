@@ -1,0 +1,7 @@
+scvi-tools==1.5.1
+torch
+anndata
+numpy
+pandas
+scipy
+scikit-learn
